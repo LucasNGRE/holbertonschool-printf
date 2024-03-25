@@ -51,10 +51,11 @@ void print_string(va_list args, int *printed_chars)
  * imprimés `printed_chars`.
  */
 
-void print_percent(int *printed_chars)
+void print_percent(va_list args, int *printed_chars)
 {
 	putchar('%');
 	(*printed_chars)++;
+	(void) args;
 }
 
 
