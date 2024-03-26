@@ -1,5 +1,4 @@
 #include "main.h"
-#include "get_format.h"
 /**
  * _printf - Imprime une chaîne de caractères selon un format spécifié.
  * @format: Chaîne de caractères de formatage.
