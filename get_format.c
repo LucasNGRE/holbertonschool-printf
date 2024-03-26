@@ -17,12 +17,13 @@ void get_formater(char flag, va_list args, int *printed_chars)
 		{'i', parse_integer},
 		{'\0', NULL},
 	};
-	
-	for (i = 0; specifier_handler[i].specifier != '\0'; i++)
+	while (structs[i].flag != '\0')
 	{
-		if (specifier_handler[i].specifier == specifier)
-			return (specifier_handler[i].call);
+		if (structs[i].flag == flag)
+		{
+			structs[i].handle(args, printed_chars);
+			return;
+		}
+		i++;
 	}
-
-	return (NULL);
 }
