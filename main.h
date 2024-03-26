@@ -6,7 +6,7 @@
 #include <stdlib.h>
 #include <stdarg.h>
 /**
- * struct specifier_handler - Structure representing a handler for a specifier.
+ * struct specifer_handler - Structure representing a handler for a specifier.
  * @flag: The flag associated with the specifier.
  * @handle: Pointer to the function that handles the specifier.
  */
@@ -19,7 +19,7 @@ typedef struct specifer_handler
 void get_formater(char flag, va_list args, int *printed_chars);
 void print_char(va_list args, int *printed_chars);
 void print_string(va_list args, int *printed_chars);
-void print_percent (va_list args, int *printed_chars);
+void print_percent(va_list args, int *printed_chars);
 int _printf(const char *format, ...);
 
 #endif

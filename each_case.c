@@ -45,6 +45,8 @@ void print_string(va_list args, int *printed_chars)
 /**
  * print_percent - Imprime le caractère % littéral.
  * @printed_chars: Pointeur vers le compteur de caractères imprimés.
+ * @args: Unused parameter, required for compatibility with function
+ * pointer signature.
  *
  * Description : Cette fonction imprime le caractère % littéral sur la
  * sortie standard. Elle incrémente également le compteur de caractères
