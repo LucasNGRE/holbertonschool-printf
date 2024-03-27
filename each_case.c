@@ -65,7 +65,7 @@ void print_percent(va_list args, int *printed_chars)
 /**
  * print_number - converts an int variable to a string and print it
  * @args: list of args
- * @size: size of buffer
+ * @printed_chars: size of buffer
 */
 void print_number(va_list args, int *printed_chars)
 {
