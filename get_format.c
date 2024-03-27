@@ -13,11 +13,8 @@ void get_formater(char flag, va_list args, int *printed_chars)
 		{'c', print_char},
 		{'s', print_string},
 		{'%', print_percent},
-<<<<<<< HEAD
 		{'d', print_number},
 		{'i', print_number},
-=======
->>>>>>> b6de16d3cde6f2ca6884dd6951b1f414d295df05
 		{'\0', NULL},
 	};
 	while (structs[i].flag != '\0')
