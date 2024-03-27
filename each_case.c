@@ -12,7 +12,9 @@
 
 void print_char(va_list args, int *printed_chars)
 {
-	putchar(va_arg(args, int));
+	char c;
+	c = va_arg(args, int);
+	putchar(c);
 	(*printed_chars)++;
 }
 /**
