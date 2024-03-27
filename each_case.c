@@ -67,7 +67,7 @@ void print_percent(va_list args, int *printed_chars)
  * @args: list of args
  * @size: size of buffer
 */
-void print_number(va_list args, int *size)
+void print_number(va_list args, int *printed_chars)
 {
 	long int num = va_arg(args, int);
 	long int absolute_num = 0;
@@ -78,7 +78,7 @@ void print_number(va_list args, int *size)
 	{
 		absolute_num = (num * -1);
 		putchar('-');
-		(*size)++;
+		(*printed_chars)++;
 	}
 	else
 		absolute_num = num;
@@ -95,6 +95,6 @@ void print_number(va_list args, int *size)
 	{
 		putchar(((absolute_num / digit_index) % 10) + '0');
 		digit_index = digit_index / 10;
-		(*size)++;
+		(*printed_chars)++;
 	}
 }
