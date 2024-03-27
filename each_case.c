@@ -66,7 +66,7 @@ void print_percent(va_list args, int *printed_chars)
  * @args: list of args
  * @size: size of buffer
 */
-void parse_integer(va_list args, int *size)
+void print_number(va_list args, int *size)
 {
 	long int num = va_arg(args, int);
 	long int absolute_num = 0;
