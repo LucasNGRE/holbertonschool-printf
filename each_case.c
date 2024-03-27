@@ -61,5 +61,39 @@ void print_percent(va_list args, int *printed_chars)
 	(*printed_chars)++;
 	(void) args;
 }
+/**
+ * print_number - converts an int variable to a string and print it
+ * @args: list of args
+ * @size: size of buffer
+*/
+void parse_integer(va_list args, int *size)
+{
+	long int num = va_arg(args, int);
+	long int absolute_num = 0;
+	long int temp_num = absolute_num;
+	long int digit_index = 1;
 
+	if (num < 0)
+	{
+		absolute_num = (num * -1);
+		putchar('-');
+		(*size)++;
+	}
+	else
+		absolute_num = num;
 
+	temp_num = absolute_num;
+
+	while (temp_num > 9)
+	{
+		temp_num = temp_num / 10;
+		digit_index = digit_index * 10;
+	}
+
+	while (digit_index >= 1)
+	{
+		putchar(((absolute_num / digit_index) % 10) + '0');
+		digit_index = digit_index / 10;
+		(*size)++;
+	}
+}
