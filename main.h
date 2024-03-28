@@ -20,7 +20,7 @@ void get_formater(char flag, va_list args, int *printed_chars);
 void print_char(va_list args, int *printed_chars);
 void print_string(va_list args, int *printed_chars);
 void print_percent(va_list args, int *printed_chars);
-void print_number(va_list args, int *size);
+void print_number(va_list args, int *printed_chars);
 int _printf(const char *format, ...);
 
 #endif
