@@ -32,11 +32,6 @@ int _printf(const char *format, ...)
 				printed_chars++;
 				return (-1);
 			}
-			else if (*format == '%')
-			{
-				putchar('%');
-				printed_chars++;
-			}
 			else
 			{
 				get_formater(*format, args, &printed_chars);
