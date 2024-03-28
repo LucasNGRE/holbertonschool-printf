@@ -18,14 +18,14 @@ In this repository you will find our Printf project.
 - All your header files should be include guarded
 - Note that we will not provide the _putchar function for this project
 ## Compilation
-Your code will be compiled this way:
+The code will be compiled this way:
 ```http
 gcc -Wall -Werror -Wextra -pedantic -std=gnu89 -Wno-format *.c
 ```
 ## Files description
 | Files     | Description                       |
 | :------- | :-------------------------------- |
-| `main.h` | Contain libraries, structure and function prototypesch |
+| `main.h` | Contain libraries, structure and function prototypes |
 | `man_3_printf` | The manual of our printf function |
 | `0_task` | The manual of our printf function |
 | `each_case.c` | All the functions to handle various format specifers for our "printf" |
