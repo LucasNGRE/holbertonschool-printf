@@ -29,6 +29,7 @@ int _printf(const char *format, ...)
 			format++;
 			if (*format == '\0')
 			{
+				putchar('%');
 				printed_chars++;
 				return (-1);
 			}
