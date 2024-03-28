@@ -27,7 +27,6 @@ gcc -Wall -Werror -Wextra -pedantic -std=gnu89 -Wno-format *.c
 | :------- | :-------------------------------- |
 | `main.h` | Contain libraries, structure and function prototypes |
 | `man_3_printf` | The manual of our printf function |
-| `0_task` | The manual of our printf function |
 | `each_case.c` | All the functions to handle various format specifers for our "printf" |
 | `get_format.c` | The get_format.c file contains the get_formater function, which associates the correct formatting function according to the format specifier provided in the printf function. |
 | `_printf.c` | It's the main entry point of our printf project. |
