@@ -26,4 +26,7 @@ void get_formater(char flag, va_list args, int *printed_chars)
 		}
 		i++;
 	}
+	putchar('%');
+	putchar(flag);
+	printed_char += 2;
 }
