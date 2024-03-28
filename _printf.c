@@ -27,7 +27,20 @@ int _printf(const char *format, ...)
 		else
 		{
 			format++;
-			get_formater(*format, args, &printed_chars);
+			if (*format == '\0')
+			{
+				printed_chars++;
+				return (-1);
+			}
+			else if (*format == '%')
+			{
+				putchar('%');
+				printed_chars++;
+			}
+			else
+			{
+				get_formater(*format, args, &printed_chars);
+			}
 		}
 		format++;
 	}
