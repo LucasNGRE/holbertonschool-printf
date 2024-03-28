@@ -32,7 +32,3 @@ gcc -Wall -Werror -Wextra -pedantic -std=gnu89 -Wno-format *.c
 | `get_format.c` | The get_format.c file contains the get_formater function, which associates the correct formatting function according to the format specifier provided in the printf function. |
 | `_printf.c` | It's the main entry point of our printf project. |
 
-## Authors
-
-- [@Taqiyeddine BOUDIAF](https://www.github.com/Rippedz)
-- [@Lucas NEGRE](https://www.github.com/LucasNGRE)
